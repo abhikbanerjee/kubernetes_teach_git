@@ -9,7 +9,7 @@ replicationcontroller "soaktestrc" created
 
 Create a Replication Controller from a file called rc.yaml (inside helper files) and add the following text:
 
-rc.yaml file is located in - https://github.com/shekhar2010us/kubernetes_teach_git/blob/master/ex1/rc.yaml
+rc.yaml file is located in - https://github.com/abhikbanerjee/kubernetes_teach_git/blob/master/ex1/rc.yaml
 
 Most of this structure should look familiar from our discussion of Deployments; we’ve got the name of the actual 
 Replication Controller (soaktestrc) and we’re designating that we should have 3 replicas, each of which are 
@@ -82,7 +82,7 @@ Replica Sets are a sort of hybrid, in that they are in some ways more powerful t
 and in others they are less powerful. Replica Sets are declared in essentially the same way as Replication Controllers, 
 except that they have more options for the selector. Use the file rs.yaml for this part
 
-rs.yaml file is located in - https://github.com/shekhar2010us/kubernetes_teach_git/blob/master/ex1/rs.yaml
+rs.yaml file is located in - https://github.com/abhikbanerjee/kubernetes_teach_git/blob/master/ex1/rs.yaml
 
 <b>The first rs.yaml file is similar to rc.yaml</b>
 
@@ -115,7 +115,7 @@ You may chose to skip this part, as this replica-set is similar to replication-c
 
 ### Replica set with more options
 
-`https://github.com/shekhar2010us/kubernetes_teach_git/blob/master/ex1/rs_selector2.yaml`
+`https://github.com/abhikbanerjee/kubernetes_teach_git/blob/master/ex1/rs_selector2.yaml`
 
 ```
 apiVersion: extensions/v1beta1
@@ -244,7 +244,7 @@ Deployments are intended to replace Replication Controllers.  They provide the s
 
 You first have to create a simple Deployment (you can find it in the git repo)  
 <br>
-deploy_backed_by_rs.yaml is located in - https://github.com/shekhar2010us/kubernetes_teach_git/blob/master/ex1/deploy_backed_by_rs.yaml
+deploy_backed_by_rs.yaml is located in - https://github.com/abhikbanerjee/kubernetes_teach_git/blob/master/ex1/deploy_backed_by_rs.yaml
 
 Now go ahead and create the Deployment:
 
