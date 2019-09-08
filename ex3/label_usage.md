@@ -7,7 +7,7 @@ replicationcontroller "soaktestrc" created
 ```
 
 Create a bunch of pods with various labels, so we can operate on these pods 
-(https://github.com/shekhar2010us/kubernetes_teach_git/blob/master/ex3/sample-infra-with-labels.yaml)
+(https://github.com/abhikbanerjee/kubernetes_teach_git/blob/master/ex3/sample-infra-with-labels.yaml)
 
 Let’s take a look at what we have created:
 
