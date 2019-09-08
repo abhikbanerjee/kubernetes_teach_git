@@ -65,7 +65,7 @@ kubectl delete --all deploy,pods,svc,hpa -n <your_namespace>
 
 We will use the yaml files located in this section 
 
-`https://github.com/shekhar2010us/kubernetes_teach_git/blob/master/ex4/navbar-black.yaml`
+`https://github.com/abhikbanerjee/kubernetes_teach_git/blob/master/ex4/navbar-black.yaml`
 
 Create the deployment and service for the navbar
 
