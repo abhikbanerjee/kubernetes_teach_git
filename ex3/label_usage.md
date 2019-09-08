@@ -85,7 +85,7 @@ kubectl delete pods -l env=production
 ```
 delete all pods in a namespace (we will see namespace in detail later. But right now, we have to delete all pods for cleanup, so we are using delete by namespace)
 ```
-kubectl delete --all pods --namespace=default
+kubectl delete --all pods --namespace=<your_namespace>
 ```
 
 
