@@ -1,4 +1,11 @@
 # Service Discovery: Lab
+
+### Because we are using a shared environment, we need to create our resources in separate namespaces , with every command below please add the suffix "-n <yourname_bitbucket_ns>" for e.g (this assumes you have created your namespace already otherwise  run "create namespace <yourname_bitbucket_ns>"
+```
+# kubectl create -f rc.yaml -n abhik_bitbucket_ns
+replicationcontroller "soaktestrc" created
+```
+
 Let us create a service names `thesvc` and a Replication Controller supervisng some pods.
 
 ```
