@@ -1,6 +1,6 @@
 ## Namespaces Usage
 
-### Because we are using a shared environment, we need to create our resources in separate namespaces , please change the namespaces by appending your name to it <myname_dev>,and <myname_prod> for example 
+### Because we are using a shared environment, we need to create our resources in separate namespaces , please change the namespaces by appending your name to it <myname-dev>,and <myname-prod> for example 
 ```
 # kubectl create -f rc.yaml -n abhik_dev
 replicationcontroller "soaktestrc" created
