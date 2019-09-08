@@ -1,5 +1,11 @@
 ## Elasticsearch for Kubernetes
 
+### Because we are using a shared environment, we need to create our resources in separate namespaces , with every command below please add the suffix "-n <yourname_bitbucket_ns>" for e.g (this assumes you have created your namespace already otherwise  run "create namespace <yourname_bitbucket_ns>"
+```
+# kubectl create -f rc.yaml -n abhik_bitbucket_ns
+replicationcontroller "soaktestrc" created
+```
+
 This example uses only pods , and replication controllers to demonstrate the example. This example can be 
 changed to use deplpyment and scale deployments instead of pods, and Replica 
 Sets will be used instead of dealing with Replication Controllers.
