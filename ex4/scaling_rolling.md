@@ -126,5 +126,5 @@ $ kubectl rollout history deployment/header-deployment
 Let's clean up
 
 ```
-kubectl delete --all svc,deploy,pod,hpa --namespace=default
+kubectl delete --all svc,deploy,pod,hpa --namespace=<your_namespace>
 ```
