@@ -1,11 +1,17 @@
 # Scaling, Auto-Scaling and Rolling out Deployments
 
+### Because we are using a shared environment, we need to create our resources in separate namespaces , with every command below please add the suffix "-n <yourname_bitbucket_ns>" for e.g (this assumes you have created your namespace already otherwise  run "create namespace <yourname_bitbucket_ns>"
+```
+# kubectl create -f rc.yaml -n abhik_bitbucket_ns
+replicationcontroller "soaktestrc" created
+```
+
 delete all prior pods, deployments and services
 
 ```
 kubectl get pod,deploy,svc,rs,rc -o wide
 
-kubectl delete --all deploy,pods,svc,hpa -n default
+kubectl delete --all deploy,pods,svc,hpa -n <your_namespace>
 ```
 
 ## Create a deployment and a svc
@@ -51,7 +57,7 @@ $ kubectl get hpa
 ### Cleanup
 
 ```
-kubectl delete --all deploy,pods,svc,hpa -n default
+kubectl delete --all deploy,pods,svc,hpa -n <your_namespace>
 ```
 
 
