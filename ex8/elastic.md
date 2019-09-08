@@ -222,7 +222,7 @@ Go to URL 'http://<Public_IP>:<Load_Balancer_Port>/blog/post/_search?q=+title:se
 
 cleanup
 ```
-kubectl delete --all pods,svc,deploy,rc,rs --namespace=default
+kubectl delete --all pods,svc,deploy,rc,rs --namespace=<your_namespace>
 ```
 
 Reference:- http://www.elasticsearchtutorial.com/elasticsearch-in-5-minutes.html
