@@ -1,3 +1,5 @@
+## As this is a shared environment / cluster, Step 1 only needs to be run, and then Step 3 (Step 2 has been already ran, to install Tiller)
+
 # K8s install helm
 
 Helm is a package manager for Kubernetes that allows developers and operators to more easily configure and deploy applications on Kubernetes clusters.
@@ -27,6 +29,8 @@ helm init --service-account tiller
 # verify
 kubectl get pods --namespace kube-system
 ```
+
+### Step 3 : Verify
 
 ### Verify
 ```
