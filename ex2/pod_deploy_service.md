@@ -47,6 +47,8 @@ curl http://$(kubectl get svc nginx-service --template='{{.spec.clusterIP}}'):80
 kubectl delete svc nginx-service
 kubectl delete deploy nginx-deployment
 ```
+## For this instance we can verify using the port-forward option
+kubectl port-forward svc/nginx-service 31091:80 -n abhik-bitbucket-ns &
 
 # Create a Service from a Pod
 
