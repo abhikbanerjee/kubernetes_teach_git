@@ -25,7 +25,7 @@ kubectl exec -it jumpod -c shell -- curl http://thesvc/info
 ```
 Note that the IP address 172.17.0.5 above is the cluster-internal IP address of the jump pod.
 
-To access a service that is deployed in a different namespace than the one you’re accessing it from, use a FQDN in the form $SVC.$NAMESPACE.svc.cluster.local.
+To access a service that is deployed in a different namespace than the one you’re accessing it from, use a FQDN in the form $SVC.$NAMESPACE.svc.cluster.local. (svc.cluster.local may not work for the current cluster setup, its more for AWS single node cluster setup)
 
 Let’s see how that works by creating:
 
