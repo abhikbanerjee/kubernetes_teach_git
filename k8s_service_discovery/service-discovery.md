@@ -18,13 +18,7 @@ Now we want to connect to the `thesvc` service from within the cluster, say, fro
 ```
 kubectl apply -f jumpod.yaml
 ```
-The **DNS add-on** will make sure that our service thesvc is available via the FQDN `thesvc.default.svc.cluster.local` from other pods in the cluster. Let’s try it out:
-
-```
-kubectl exec -it jumpod -c shell -- ping thesvc.default.svc.cluster.local
-PING thesvc.default.svc.cluster.local (172.30.251.137) 56(84) bytes of data.
-```
-The answer to the ping tells us that the service is available via the cluster IP 172.30.251.137. We can directly connect to and consume the service (in the same namespace) like so:
+The service is available via the cluster IP . We can directly connect to and consume the service (in the same namespace) like so:
 ```
 kubectl exec -it jumpod -c shell -- curl http://thesvc/info
 {"host": "thesvc", "version": "0.5.0", "from": "172.17.0.5"}
